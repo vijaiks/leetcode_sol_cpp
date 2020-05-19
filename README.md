@@ -26,3 +26,21 @@ The substring with start index = 6 is "bac", which is an anagram of "abc".
 
 
 ------------------------------------/
+
+3. groupAnagrams
+
+/------------------------------------
+
+Given an array of strings, group anagrams together.
+Example:
+
+Input: ["eat", "tea", "tan", "ate", "nat", "bat"],
+
+Output:
+[
+  ["ate","eat","tea"],
+  ["nat","tan"],
+  ["bat"]
+]
+
+------------------------------------/
