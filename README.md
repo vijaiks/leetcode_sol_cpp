@@ -94,3 +94,40 @@ Output: [1]
 
 ------------------------------------/
 
+
+------------------------------------/
+
+
+
+6. loggerRateLimiter
+
+/------------------------------------
+
+
+Design a logger system that receive stream of messages along with its timestamps, 
+each message should be printed if and only if it is not printed in the last 10 seconds.
+Given a message and a timestamp (in seconds granularity), return true if the message should be
+printed in the given timestamp, otherwise returns false.
+It is possible that several messages arrive roughly at the same time.
+
+
+
+------------------------------------/
+
+7. detectCapital
+
+/------------------------------------
+
+Given a word, you need to judge whether the usage of capitals in it is right or not.
+We define the usage of capitals in a word to be right when one of the following cases holds:
+	All letters in this word are capitals, like "USA".
+	All letters in this word are not capitals, like "leetcode".
+	Only the first letter in this word is capital, like "Google".
+	Otherwise, we define that this word doesn't use capitals in a right way.
+
+
+------------------------------------/
+
+
+
+
