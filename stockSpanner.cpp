@@ -11,9 +11,11 @@ For example, if the price of a stock over the next 7 days were [100, 80, 60, 70,
 #include<vector>
 #include<stack>
 #include <iostream>
+
 using namespace std;
 
-class StockSpanner {
+class StockSpanner 
+{
     //stack data structure to hold prices in decreasing order
     stack<pair<int, int>> stack_ds;
     //index to traverse current day prices
@@ -28,13 +30,15 @@ public:
     int next(int price)
     {
         index +=1;
-        //check if stack not empty and top price is not less thet that current price
+        
+		//check if stack not empty and top price is not less thet that current price
         //if so pop those prices
         while(!stack_ds.empty() && stack_ds.top().second <= price)
         {
             stack_ds.pop();
         }
-        //if stack is empty, means no greater prices are available
+        
+		//if stack is empty, means no greater prices are available
         //push on stack and return index +1 as stock span
         if(stack_ds.empty())
         {
